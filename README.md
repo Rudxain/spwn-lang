@@ -115,7 +115,7 @@ cargo install spwn
 
 Let it compile and you're good to go.
 
-### Compiling from source
+### Installing from source
 
 1. [Download](https://github.com/Spu7Nix/SPWN-language/archive/refs/heads/master.zip) the source code from this repository.
 2. Unzip the .zip file.
@@ -124,8 +124,10 @@ Let it compile and you're good to go.
 - Windows: Right click the folder and press `Open command window here`.
 - Mac: Open `Terminal.app` in the `Utilities` folder in the `Applications` folder, then drag and drop the folder onto the terminal window and press enter.
 - Linux: Right click the folder and press `Open in Terminal`.
-6. Run `cargo build --release`.
-7. Compiled binary is placed in the `target/release` directory.
+6. Run:
+  ```sh
+  cargo install . --config 'build.rustflags="-C target-cpu=native"'
+  ```
 
 ## Using SPWN
 
