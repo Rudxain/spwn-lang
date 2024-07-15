@@ -126,7 +126,7 @@ Let it compile and you're good to go.
 - Linux: Right click the folder and press `Open in Terminal`.
 6. Run:
   ```sh
-  cargo install . --config 'build.rustflags="-C target-cpu=native"'
+  cargo install --path . --config 'build.rustflags="-C target-cpu=native"'
   ```
 
 ## Using SPWN
